@@ -28,12 +28,12 @@ nav{
     height: 100%;
     overflow: hidden;
     background-color: black;
-    padding: 15px;
+    padding: 5px;
+    font-weight: bold;
 }
 
 .logo{
-    width: 90%;
-   
+    width: 90%;   
 }
 
 .home-list{
@@ -45,9 +45,17 @@ nav{
     margin:20px 0;
 
 }
+
+#home{
+    color: white;
+    border-left:2px solid #99e12b;
+    font-weight: bold;
+}
+
 .home-list img{
     width: 30px;
     vertical-align: middle;
+    margin-left: 10px;
 }
 .home-list span{
     padding-bottom:5px;
@@ -59,6 +67,28 @@ nav{
 .home-list a{
     text-decoration: none;
     color: #a3a3a3;
+}
+
+/* Playlist-list */
+.playlist{
+    margin-left:10px;
+}
+.playlist h3{
+    color:white;  
+}
+
+.new-playlist{
+    margin:20px 0;
+}
+
+.new-playlist i{
+    background-color:#a3a3a3;
+    width:30px;
+    height: 30px;
+    border-radius:5px ;
+    text-align: center;
+    line-height: 30px;
+    color:black;
 }
 
 
