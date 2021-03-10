@@ -1,0 +1,92 @@
+/* RESET */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+img{
+    width:100%;
+}
+
+/* MAIN */
+.app-wrapper{
+    background-color: blue;
+    width: 100%;
+    height: 100vh;
+    font-family: "Circular Spotify Tx T Bold", Arial, Helvetica, sans-serif;
+}
+
+main{
+    height: calc( 100% - 100px );
+}
+
+/* Nav */
+nav{
+    float: left;
+    width: 220px;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+    padding: 15px;
+}
+
+.logo{
+    width: 90%;
+   
+}
+
+.home-list{
+    list-style-type:none;
+    margin-top:30px;
+}
+
+.home-list li{
+    margin:20px 0;
+
+}
+.home-list img{
+    width: 30px;
+    vertical-align: middle;
+}
+.home-list span{
+    padding-bottom:5px;
+    margin-left: 5px;
+
+
+}
+
+.home-list a{
+    text-decoration: none;
+    color: #a3a3a3;
+}
+
+
+
+/* Content-main */
+.main-content{
+    float: left;
+    height: 100%;
+    width: calc( 100% - 220px );
+    overflow-y: auto ;
+
+    /* TEST */
+    background-color: chartreuse;
+}
+
+
+
+
+
+
+
+/* FOOTER */
+footer{
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+
+
+    /* TEST */
+    background-color: darkgoldenrod;
+}
