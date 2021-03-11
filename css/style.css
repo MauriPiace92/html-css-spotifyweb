@@ -22,6 +22,7 @@ main{
 }
 
 /* Nav */
+
 nav{
     float: left;
     width: 220px;
@@ -30,6 +31,16 @@ nav{
     background-color: black;
     padding: 5px;
     font-weight: bold;
+}
+.nav-container{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.nav-container a:hover,
+.nav-container i:hover{
+    color:white;
 }
 
 .logo{
@@ -43,6 +54,10 @@ nav{
 
 .home-list li{
     margin:20px 0;
+
+}
+.home-list li:hover{
+    color:white;
 
 }
 
@@ -72,13 +87,22 @@ nav{
 /* Playlist-list */
 .playlist{
     margin-left:10px;
+    min-height: 100px;
+    overflow-y: auto;
+    flex-grow:  2;
+
 }
 .playlist h3{
     color:white;  
 }
+.playlist a{
+    text-decoration: none;
+    color:#a3a3a3;
+}
 
 .new-playlist{
     margin:20px 0;
+    
 }
 
 .new-playlist i{
@@ -91,7 +115,48 @@ nav{
     color:black;
 }
 
+.playlist-list li{
+    padding: 5px 0;
 
+}
+
+/* install-app */
+.user{
+    padding:10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.user img{
+    width:20px;
+    vertical-align: middle;
+}
+
+.user a{
+    margin-bottom:10px;
+    text-decoration: none;
+    color:#a3a3a3;
+}
+
+.user-access{
+    padding: 10px 0;
+    border: 0px solid black;
+    border-top: 1px solid #a3a3a3;
+    margin-top: 10px;
+}
+
+.user-access img{
+    background-color: gray;
+    width: 30px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.user-access a{
+    color:white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left:10px;
+}
 
 /* Content-main */
 .main-content{
@@ -99,15 +164,58 @@ nav{
     height: 100%;
     width: calc( 100% - 220px );
     overflow-y: auto ;
+    background-color: #141922;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
 
-    /* TEST */
-    background-color: chartreuse;
+.menu{
+    flex-wrap: wrap;
+}
+
+.menu-list{
+    list-style-type: none;
+}
+.menu-list li{
+    display: inline-block;
+    margin: 10px 15px;
+
+}
+.menu-list a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#a3a3a3;
+    font-weight: bold;
+}
+
+.menu-list li:first-child{
+    border-bottom: 3px solid #99e12b;
+    padding-bottom: 5px;
 }
 
 
 
+@media screen and (max-width:767px){
+    .nav-container {
+        display: none;
+    }
+
+    nav{
+        width: 70px;
+    }
+    #logo-small{
+        width: 40px;
+        display: contents;
+        color: white;
+    }
+
+    .main-content{
+        width: calc( 100% - 70px );
+    }
 
 
+}
 
 
 /* FOOTER */
@@ -115,8 +223,5 @@ footer{
     height: 100px;
     width: 100%;
     overflow: hidden;
-
-
-    /* TEST */
-    background-color: darkgoldenrod;
+    background-color: #282828;
 }
