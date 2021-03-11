@@ -246,7 +246,7 @@ section{
 }
 
 /* section create for */
-.creato-per p{
+section p{
     color:#a3a3a3;
     margin:10px;
     
@@ -283,6 +283,73 @@ section{
     margin-top:5px
 }
 
+/* Section Artisti */
+.artist-list{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    list-style-type: none;
+    
+}
+
+
+.artist-list li{
+    position: relative;
+    width: 300px;
+    margin: 20px 20px;
+}
+.artist-list li img{
+    position: relative;
+    width:100%;
+    border-radius: 50%;
+
+}
+
+.artist-list h3{
+    margin: auto;
+    color: white;
+    margin-top:10px;
+    font-weight: bold;
+
+}
+
+.artist-list p{
+    color:#a3a3a3;
+    margin-top:5px
+}
+.overlay {
+    position: absolute; 
+    top: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    border-radius: 50%;
+    width: 100%;
+    height: 90%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 100px;
+    padding: 20px;
+    line-height: 20px;
+    
+  }
+
+  .overlay i{
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+  }
+
+  .artist-list li:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+section img:hover{
+    cursor:pointer;
+}
 
 
 
