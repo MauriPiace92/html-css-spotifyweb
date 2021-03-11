@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-img{
-    width:100%;
-}
-
 /* MAIN */
 .app-wrapper{
     background-color: blue;
@@ -163,6 +159,15 @@ nav{
 }
 
 /* Content-main */
+/* Common Content Main */
+h2{
+    color: white;
+    font-size: 40px;
+    margin:20px 10px;
+}
+
+
+/* end common content main */
 .main-content{
     float: left;
     height: 100%;
@@ -170,11 +175,12 @@ nav{
     overflow-y: auto ;
     background-color: #141922;
     padding-top: 100px;
-    display: flex;
-    justify-content: center;
 }
 
+
 .menu{
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -198,32 +204,99 @@ nav{
     padding-bottom: 5px;
 }
 
+.menu-list a:hover{
+    color:white;
+}
+
+/* recently-player */
+section{
+    padding: 50px 40px;
+}
 
 
-@media screen and (max-width:767px){
-    .nav-container {
-        display: none;
-    }
+.items-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    list-style-type: none;
+    
+}
 
-    nav{
-        width: 70px;
-    }
-    #logo-small{
-        width: 40px;
-        display: contents;
-        color: white;
-    }
-
-    .main-content{
-        width: calc( 100% - 70px );
-    }
-
-    .nav-responsive{
-        
-    }
-
+.items-list li{
+    width: 300px;
+    margin: 20px 0;
+}
+.items-list li img{
+    width:100%;
 
 }
+
+.items-list h3{
+    margin: auto;
+    color: white;
+    margin-top:10px;
+    font-weight: bold;
+
+}
+
+.items-list p{
+    color:#a3a3a3;
+    margin-top:5px
+}
+
+/* section create for */
+.creato-per p{
+    color:#a3a3a3;
+    margin:10px;
+    
+
+}
+.items-list-create{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    list-style-type: none;
+    
+}
+
+
+.items-list-create li{
+    width: 300px;
+    margin: 20px 20px;
+}
+.items-list-create li img{
+    width:100%;
+
+}
+
+.items-list-create h3{
+    margin: auto;
+    color: white;
+    margin-top:10px;
+    font-weight: bold;
+
+}
+
+.items-list-create p{
+    color:#a3a3a3;
+    margin-top:5px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* FOOTER */
@@ -232,4 +305,62 @@ footer{
     width: 100%;
     overflow: hidden;
     background-color: #282828;
+}
+
+/* _______________________________________________________________________________________ */
+/* MEDIA QUERY */
+@media screen and ( min-width:768px){
+    .logo-xs-hidden{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width:767px){
+    nav{
+        width: 70px;
+        margin: auto;
+    }
+    .home-list{
+        flex-grow: 1;
+    }
+
+    #home{
+        border:none;
+    }
+    .logo {
+        display: none;
+        
+    }
+
+    .logo-xs-hidden{
+        width: 80%;
+
+    }
+
+    .home-list a{
+        display:none;
+    }
+
+    .playlist{
+        display:none
+    }
+
+    .user a{
+        display: none;
+    }
+
+    .user img{
+        width: 30px;
+    }
+
+    .user-access{
+        border-top: none;
+    }
+ 
+
+    .main-content{
+        width: calc( 100% - 70px );
+    }
 }
