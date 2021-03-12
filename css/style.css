@@ -501,6 +501,10 @@ footer{
     background-color: #a3a3a3;
     margin: 10px 20px;
 }
+.time{
+    color: white;
+    font-weight: bold;
+}
 
 .time-real{
     width: 30%;
@@ -526,6 +530,56 @@ footer{
     opacity:1;
 }
 
+/* Right part */
+.right-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-list li{
+    margin-left:20px;
+}
+.right-list a{
+    color:white;
+    font-size: 20px;
+}
+.right-list a:hover{
+    font-size:25px;
+}
+
+.volume-bar{
+    width: 150px;
+    height: 5px;
+    border-radius:10px;
+    background-color: #a3a3a3;
+    margin: 10px 0px;
+}
+
+.volume-level{
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    text-align: right;
+    position: relative;
+}
+
+.volume-level:hover {
+    background-color:#99e12b ;
+}
+
+#circle-volume{
+    font-size: 20px;
+    color: white;
+    padding-bottom: 8px;
+    opacity: 0;
+    position: absolute;
+    bottom: -17px;
+}
+
+#circle-volume:hover{
+    opacity:1;
+}
 
 
 
