@@ -7,7 +7,6 @@
 
 /* MAIN */
 .app-wrapper{
-    background-color: blue;
     width: 100%;
     height: 100vh;
     font-family: "Circular Spotify Tx T Bold", Arial, Helvetica, sans-serif;
@@ -40,7 +39,8 @@ nav{
 }
 
 .logo{
-    width: 90%;   
+    width: 90%; 
+    padding: 16px 0;  
 }
 
 .home-list{
@@ -114,7 +114,6 @@ nav{
 
 .playlist-list li{
     padding: 5px 0;
-
 }
 
 /* install-app */
@@ -190,7 +189,7 @@ h2{
 }
 .menu-list li{
     display: inline-block;
-    margin: 10px 15px;
+    margin: 20px 15px;
 
 }
 .menu-list a{
@@ -424,6 +423,13 @@ footer{
     margin: 20px 30px;
 }
 
+.left-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 .img-container{
     display: flex;
     align-items: center;
@@ -436,7 +442,7 @@ footer{
 }
 
 .title-rep{
-    margin: 5px 10px;
+    margin: 5px 40px;
 }
 
 .title-rep h3{
@@ -447,23 +453,27 @@ footer{
     font-size: 12px;
 }
 
-.img-container a{
+.icons-lefter a{
+    display: block;
     color:#a3a3a3;
-    font-size: 20px;
-    margin: 0 10px;
+    font-size: 24px;
+    margin: 5px 10px;
 }
-
-.img-container a:hover{
+.fa-heart:hover{
+    color: red;
+}
+.fa-folder:hover{
+    color: burlywood;
+}
+.icons-lefter a:hover{
     color: white;
     font-size: 23px;
 }
 
 /* central part */
-.central-parts{
-    align-items: center;
-    justify-content: center;
+.central-part{
+    flex-grow: 1;
 }
-
 .list-riproduction{
     list-style-type: none;
     display: flex;
@@ -472,13 +482,14 @@ footer{
 }
 .list-riproduction li{
     display:inline-block;
+    flex-basis: 70px;
+    text-align: center;
 }
 
 .list-riproduction a{
     color: white;
     text-decoration: none;
     font-size: 20px;
-    margin: 0 20px;
 }
 #play {
     font-size: 40px;
@@ -491,11 +502,13 @@ footer{
 .time-bar-container{
     display: flex;
     align-items: center;
+    justify-content: center;;
 
 }
 
 .current-time{
-    width: 550px;
+
+    flex-basis:550px;
     height: 5px;
     border-radius:10px;
     background-color: #a3a3a3;
@@ -517,16 +530,15 @@ footer{
     background-color:#99e12b ;
 }
 
-#circle{
+.circle{
     font-size: 30px;
     color: white;
-    padding-bottom: 8px;
+    position: relative;
+    bottom: 14px;
     opacity: 0;
-    position: absolute;
-    bottom: -5px;
 }
 
-#circle:hover{
+.circle:hover{
     opacity:1;
 }
 
@@ -561,23 +573,22 @@ footer{
     height: 100%;
     background-color: white;
     text-align: right;
-    position: relative;
 }
 
 .volume-level:hover {
-    background-color:#99e12b ;
+    background-color:#99e12b;
 }
 
-#circle-volume{
+.circle-volume{
+    width: ;
     font-size: 20px;
     color: white;
-    padding-bottom: 8px;
+    position: relative;
+    bottom: 8px;
     opacity: 0;
-    position: absolute;
-    bottom: -17px;
 }
 
-#circle-volume:hover{
+.circle-volume:hover{
     opacity:1;
 }
 
@@ -642,4 +653,32 @@ footer{
     .main-content{
         width: calc( 100% - 70px );
     }
+}
+
+/* FIXEd */
+.fixed-bar{
+    width: calc( 100% - 220px );
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-align: right;
+    padding: 35px 70px;
+}
+
+.fixed-bar a{
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    text-decoration: none;
+
+}
+
+.fixed-bar a:hover{
+    color:    #99e12b;
+    border: 1px solid #99e12b;
+    text-decoration: underline;
 }
